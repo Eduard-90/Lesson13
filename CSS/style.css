@@ -316,6 +316,12 @@ body {
 .card__text1 {
   padding: 20px 0 0 10px;
 }
+.what__servisec {
+  position: relative;
+  min-width: 1400px;
+  width: 100%;
+  height: 624px;
+}
 .services__text {
   width: 493px;
   height: 40px;
@@ -328,48 +334,50 @@ body {
   font-weight: 600;
   color: #46b1de;
 }
-.services__card {
-  display: flex;
-  flex-wrap: wrap;
-}
-.services__card img {
-  position: absolute;
-  width: 330px;
-  height: 302px;
-  left: 535px;
-  top: 1533px;
-}
 .services__card1 {
+  display: inline-block;
   margin: 0 0 31px 195px;
   text-align: right;
   width: 338px;
 }
 
 .services__card2 {
-  margin: 0 0 25px 322px;
+  display: inline-block;
+  margin-left: 322px;
   width: 290px;
 }
 
 .services__card3 {
+  display: inline-block;
   margin: 0 0 29px 202px;
   width: 283px;
   text-align: right;
 }
 
 .services__card4 {
+  display: inline-block;
   width: 291px;
-  margin: 0 0 45px 429px;
+  margin-left: 429px;
 }
 
 .services__card5 {
-  width: 295px;
+  display: inline-block;
+  width: 316px;
   text-align: right;
-  margin-left: 284px;
+  margin-left: 264px;
 }
 
 .services__card6 {
+  display: inline-block;
   width: 308px;
   margin-left: 236px;
+}
+.services__card {
+  position: absolute;
+  width: 330px;
+  height: 302px;
+  left: 535px;
+  top: 93px;
 }
 .services__text2 {
   font-weight: 600;
@@ -382,7 +390,7 @@ body {
   display: flex;
   font-size: 20px;
   color: #46b1de;
-  margin: 104px 0 0 436px;
+  margin: 59px 0 0 436px;
   align-items: center;
 }
 .services__bottom img {
@@ -487,6 +495,7 @@ form {
 /* Footer */
 
 footer {
+  position: relative;
   display: flex;
   max-width: 1400px;
   width: 100%;
@@ -564,7 +573,7 @@ footer {
   position: absolute;
   height: 23px;
   left: 355px;
-  top: 3023px;
+  top: 213px;
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
@@ -575,7 +584,7 @@ footer {
   width: 128px;
   height: 54px;
   left: 352px;
-  top: 3056px;
+  top: 246px;
   font-size: 20px;
   line-height: 135%;
   color: #0f2d4a;
@@ -601,8 +610,8 @@ footer {
 }
 .copy {
   position: absolute;
-  left: 1069px;
-  top: 3184px;
+  left: 1116px;
+  top: 371px;
   font-size: 13px;
   line-height: 130%;
   text-align: center;
@@ -676,14 +685,7 @@ footer {
     max-width: 255px;
   }
   .services__text {
-    margin: 90px auto 50px auto;
-  }
-  .services__card img {
-    position: absolute;
-    width: 260px;
-    height: 232px;
-    left: 370px;
-    top: 1570px;
+    margin: 90px 0 50px 230px;
   }
   .services__card1 {
     margin: 0 0 31px 63px;
@@ -692,7 +694,7 @@ footer {
   }
 
   .services__card2 {
-    margin: 0 0 25px 265px;
+    margin-left: 265px;
     width: 285px;
   }
 
@@ -703,22 +705,29 @@ footer {
   }
 
   .services__card4 {
+    margin-left: 316px;
     width: 273px;
-    margin: 0 0 45px 316px;
   }
 
   .services__card5 {
-    width: 285px;
+    width: 317px;
     text-align: right;
-    margin-left: 118px;
+    margin-left: 93px;
   }
 
   .services__card6 {
     width: 305px;
     margin-left: 202px;
   }
+  .services__card {
+    position: absolute;
+    width: 260px;
+    height: 232px;
+    left: 377px;
+    top: 126px;
+  }
   .services__bottom {
-    margin: 104px 0 0 230px;
+    margin: 59px 0 0 230px;
   }
   .form {
     margin: 88px 0 0 80px;
@@ -750,12 +759,12 @@ footer {
   .footer__time1 {
     position: absolute;
     left: 218px;
-    top: 3023px;
+    top: 213px;
   }
   .footer__time2 {
     position: absolute;
     left: 215px;
-    top: 3056px;
+    top: 246px;
   }
   .footer__right {
     margin: 60px 0 0 120px;
@@ -763,7 +772,7 @@ footer {
   .copy {
     position: absolute;
     left: 786px;
-    top: 3179px;
+    top: 371px;
   }
 }
 
@@ -785,7 +794,8 @@ footer {
     height: 39.16px;
   }
   .header__logo {
-    width: 183px;
+    max-width: 183px;
+    min-width: 183px;
     height: 39.16px;
     padding: 30px 0 0 0;
   }
@@ -899,7 +909,7 @@ footer {
     margin-bottom: 10px;
   }
   .why__you {
-    margin: 10px auto;
+    margin: 10px 30px;
     max-width: 290px;
     font-size: 22px;
     text-align: center;
@@ -908,7 +918,7 @@ footer {
     width: 250px;
     font-size: 12px;
     line-height: 118%;
-    margin: 15px auto;
+    margin: 15px 50px;
   }
   .cards {
     display: flex;
@@ -947,45 +957,59 @@ footer {
   .order6 {
     order: 6;
   }
+  .what__servisec {
+    position: static;
+    min-width: max-content;
+    height: max-content;
+  }
+  .what__servisec br {
+    display: none;
+  }
   .services__text {
     width: 225px;
     height: 55px;
     font-size: 22px;
     line-height: 27px;
-    margin: 30px auto;
+    margin: 30px 30px;
     text-align: center;
   }
   .services__card1 {
-    margin: 0 auto;
+    display: block;
+    margin: 0 0 20px 30px;
     text-align: start;
     width: 235px;
   }
 
   .services__card2 {
-    margin: 10px auto;
+    display: block;
+    margin: 0 0 20px 30px;
     width: 235px;
   }
 
   .services__card3 {
-    margin: 10px auto;
+    display: block;
+    margin: 0 0 20px 30px;
     width: 235px;
     text-align: start;
   }
 
   .services__card4 {
+    display: block;
     width: 235px;
-    margin: 10px auto;
+    margin: 0 0 20px 30px;
   }
 
   .services__card5 {
+    display: block;
     width: 235px;
     text-align: start;
-    margin: 10px auto;
+    margin: 0 0 20px 30px;
   }
 
   .services__card6 {
+    display: block;
     width: 235px;
-    margin: 10px auto;
+    margin: 0 0 20px 30px;
   }
   .services__text2 {
     font-size: 18px;
@@ -997,10 +1021,9 @@ footer {
   .services__bottom {
     display: flex;
     flex-direction: column;
+    width: max-content;
     font-size: 18px;
-    color: #46b1de;
-    margin: 0 auto;
-    align-items: center;
+    margin: 0 0 0 30px;
   }
   .services__bottom img {
     width: 50px;
@@ -1130,12 +1153,12 @@ footer {
   }
   .footer__time1 {
     left: 180.52px;
-    top: 3794px;
+    top: 142.69px;
     font-size: 14.2648px;
   }
   .footer__time2 {
     left: 178px;
-    top: 3819px;
+    top: 164px;
     font-size: 14.2648px;
   }
   .footer__right {
@@ -1171,7 +1194,7 @@ footer {
   .language__ua,
   .header__text2,
   .header__buttons,
-  .services__card img,
+  .services__card,
   .footer__socnetwork {
     display: none;
   }
